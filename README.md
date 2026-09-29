@@ -1,4 +1,4 @@
-# CO3117 Machine Learning — Individual Assignment
+# CO3117 Machine Learning - Individual Assignment
 
 A single use case followed for the whole semester: **6-class human activity recognition** on the
 [UCI HAR dataset](data/README.md). Each week's model is implemented **from scratch in NumPy**, evaluated on the
@@ -25,7 +25,7 @@ and writes figures to `results/figures/`.
 
 | Week | Model (from scratch) | Test macro-F1 | sklearn reference |
 |---|---|---|---|
-| W02 | Decision Tree | TBD | TBD |
+| W02 | Decision tree (Gini, max depth 4) | 0.8359 | 0.8359 |
 | W03 | Softmax regression ($\eta = 0.1$) | 0.9365 | 0.9556 |
 | W04 | MLP 561-128-6, ReLU, Adam, early stopping | 0.9465 | 0.9428 |
 

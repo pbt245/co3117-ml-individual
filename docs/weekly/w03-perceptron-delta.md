@@ -1,4 +1,4 @@
-# W03 — Perceptron, Delta Rule and Logistic/Softmax Regression
+# W03 - Perceptron, Delta Rule and Logistic/Softmax Regression
 
 Slides: `LinearRegression.pdf` (the delta rule reuses its GD update), `LogisticRegression.pdf`, recap in `MLP.pdf`. Code: [logistic.py](../../src/from_scratch/logistic.py), [w03_logreg.py](../../experiments/part1_pre_midterm/w03_logreg.py)
 

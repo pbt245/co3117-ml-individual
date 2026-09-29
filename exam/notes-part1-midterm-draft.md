@@ -1,6 +1,6 @@
 # A4 Notes draft, W01–W04
 
-## W01 — Basics and evaluation
+## W01 - Basics and evaluation
 - **Mitchell's definition:** a program learns from experience $E$ on task $T$, measured by $P$, if $P$ on $T$ improves with $E$.
 - **Learning types:** supervised ($x \to y$), unsupervised ($x$ only: clustering, PCA, density), reinforcement (state, action, reward; maximise cumulative reward).
 - **Confusion-matrix metrics:**
@@ -13,7 +13,7 @@
 - **Bias–variance decomposition:** $\mathbb{E}\left[(y - \hat{y})^2\right] = \mathrm{Bias}[\hat{y}]^2 + \mathrm{Var}[\hat{y}] + \sigma^2$ ($\sigma^2$ is the irreducible noise).
 - **Data splits:** train / val / test are i.i.d. The test set is touched once. Preprocessing is fitted on train only.
 
-## W02 — Decision trees
+## W02 - Decision trees
 - **Tree:** internal node = test on one feature ($x_j \le T$ or $A = v$), leaf = majority class (classification) or mean target (regression). It is grown greedily top-down; prediction walks root → leaf.
 - **Entropy:** $H(S) = -\sum_i p_i \log_2 p_i$. It is 0 when the node is pure and 1 for a 50/50 split of 2 classes. Play Tennis (9 Yes / 5 No): $H = 0.940$.
 - **Information gain (ID3):** $IG(S, A) = H(S) - \sum_{v} \dfrac{|S_v|}{|S|} H(S_v)$. Pick $\arg\max IG$. Play Tennis: Outlook 0.247 > Humidity 0.152 > Wind 0.048 > Temp 0.029, so the root is Outlook.
@@ -27,7 +27,7 @@
 - **Missing values:** C4.5 sends a sample fractionally down all branches; CART uses surrogate splits; ID3 needs imputation.
 - **Comparison:** ID3 = multiway splits + IG, categorical only. C4.5 = gain ratio, continuous attributes, pruning. CART = binary splits + Gini/SSE, cost-complexity pruning.
 
-## W03 — Linear models: regression and classification
+## W03 - Linear models: regression and classification
 ### Linear regression
 - **Model:** $t = w^\top x + \varepsilon$, $\varepsilon \sim \mathcal{N}(0, \beta^{-1})$, so $p(t \mid x) = \mathcal{N}(w^\top x, \beta^{-1})$.
 - **NLL:** $L = \beta E_D(w) - \dfrac{N}{2} \ln \beta + \text{const}$, with $E_D = \dfrac{1}{2} \sum (t_n - w^\top x_n)^2$.
@@ -47,7 +47,7 @@
 - **Softmax regression:** $p_k = \dfrac{e^{z_k}}{\sum_j e^{z_j}}$, with loss $\mathrm{CE} = -\sum_k y_k \ln p_k$ and gradient $X^\top(P - Y)$. The boundary between classes $k$ and $j$ is $(w_k - w_j)^\top x + (b_k - b_j) = 0$.
 - **Numerical stability:** subtract $\max z$ before the softmax. The stable BCE-with-logits is $\max(z, 0) - yz + \ln\left(1 + e^{-\lvert z \rvert}\right)$.
 
-## W04 — MLP and training
+## W04 - MLP and training
 - **Layers:** $h^{(l)} = \varphi\left(W^{(l)} h^{(l-1)} + b^{(l)}\right)$. An FC layer with $N$ inputs and $M$ outputs has $M \cdot N + M$ parameters.
 - **Activations:**
   - sigmoid: $\sigma' = \sigma(1 - \sigma)$

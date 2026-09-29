@@ -1,4 +1,4 @@
-# W04 Drill — MLP and Backpropagation (15 min, closed book)
+# W04 Drill - MLP and Backpropagation (15 min, closed book)
 
 Write the first attempt on paper and scan it to `exercises/w04-first-attempt.pdf`, then correct it in [w04-corrections.md](w04-corrections.md).
 

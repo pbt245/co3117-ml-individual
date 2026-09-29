@@ -1,4 +1,4 @@
-# W03 Drill — Perceptron, Delta Rule, Logistic Regression (15 min, closed book)
+# W03 Drill - Perceptron, Delta Rule, Logistic Regression (15 min, closed book)
 
 Write the first attempt on paper and scan it to `exercises/w03-first-attempt.pdf`, then correct it in [w03-corrections.md](w03-corrections.md).
 

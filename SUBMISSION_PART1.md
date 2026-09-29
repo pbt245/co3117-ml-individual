@@ -1,4 +1,4 @@
-# Submission — Part I (deadline 14/10/2026, tag `part1-final`)
+# Submission - Part I (deadline 14/10/2026, tag `part1-final`)
 
 ## Checklist
 - [x] Use case and dataset fixed: UCI HAR, 6 classes, test macro-F1

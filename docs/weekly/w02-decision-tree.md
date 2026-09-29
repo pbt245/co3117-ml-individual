@@ -1,4 +1,4 @@
-# W02 — Decision Trees (ID3, C4.5, CART)
+# W02 - Decision Trees (ID3, C4.5, CART)
 
 Slides: `Decision_Tree.pdf`. Code: [decision_tree.py](../../src/from_scratch/decision_tree.py), [w02_decision_tree.py](../../experiments/part1_pre_midterm/w02_decision_tree.py)
 

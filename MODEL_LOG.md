@@ -4,7 +4,7 @@ Every model trained on UCI HAR, with the same protocol: a subject-wise train/val
 standardization fitted on train. Test = official test set (9 subjects). Metric = macro-F1. Raw rows are in
 [results/metrics.csv](results/metrics.csv).
 
-## W03 — Linear classifiers ([w03_logreg.py](experiments/part1_pre_midterm/w03_logreg.py))
+## W03 - Linear classifiers ([w03_logreg.py](experiments/part1_pre_midterm/w03_logreg.py))
 
 | Date | Model | Setting | Split | Acc | Macro-F1 | Notes |
 |---|---|---|---|---|---|---|
@@ -21,7 +21,7 @@ standardization fitted on train. Test = official test set (9 subjects). Metric =
 | 2026-09-27 | Softmax regression | $\eta = 0.1$ (selected) | **test** | 0.9369 | **0.9365** | |
 | 2026-09-27 | sklearn LogisticRegression | $C = 1.0$ (L2), train+val | test | 0.9555 | 0.9556 | Reference only |
 
-## W04 — MLP + backprop ([w04_mlp.py](experiments/part1_pre_midterm/w04_mlp.py))
+## W04 - MLP + backprop ([w04_mlp.py](experiments/part1_pre_midterm/w04_mlp.py))
 
 All runs use 561-128-6, 40 epochs, $B = 64$, and He init.
 

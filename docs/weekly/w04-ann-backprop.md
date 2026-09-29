@@ -1,4 +1,4 @@
-# W04 — Multilayer Perceptron and Backpropagation
+# W04 - Multilayer Perceptron and Backpropagation
 
 Slides: `MLP.pdf`, `TrainingANN.pdf`. Code: [mlp.py](../../src/from_scratch/mlp.py), [w04_mlp.py](../../experiments/part1_pre_midterm/w04_mlp.py)
 
