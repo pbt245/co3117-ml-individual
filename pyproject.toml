@@ -1,0 +1,18 @@
+[project]
+name = "co3117-ml-individual"
+version = "0.1.0"
+description = "CO3117 Machine Learning individual assignment: from-scratch models on UCI HAR"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.0",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,46 @@
+date,week,model,setting,split,accuracy,macro_f1
+2026-09-29,W02,tree_gini,max_depth=1,val,0.3977,0.2334
+2026-09-29,W02,tree_gini,max_depth=2,val,0.5580,0.3735
+2026-09-29,W02,tree_gini,max_depth=3,val,0.7906,0.7089
+2026-09-29,W02,tree_gini,max_depth=4,val,0.8527,0.8410
+2026-09-29,W02,tree_gini,max_depth=5,val,0.8001,0.7746
+2026-09-29,W02,tree_gini,max_depth=6,val,0.7974,0.7750
+2026-09-29,W02,tree_gini,max_depth=8,val,0.7626,0.7400
+2026-09-29,W02,tree_gini,max_depth=10,val,0.7715,0.7538
+2026-09-29,W02,tree_gini,max_depth=12,val,0.7367,0.7233
+2026-09-29,W02,tree_gini,max_depth=15,val,0.7353,0.7226
+2026-09-29,W02,tree_gini,max_depth=None,val,0.7347,0.7218
+2026-09-29,W02,tree_entropy,max_depth=1,val,0.3561,0.1760
+2026-09-29,W02,tree_entropy,max_depth=2,val,0.6392,0.5138
+2026-09-29,W02,tree_entropy,max_depth=3,val,0.8527,0.8242
+2026-09-29,W02,tree_entropy,max_depth=4,val,0.8015,0.7775
+2026-09-29,W02,tree_entropy,max_depth=5,val,0.8199,0.7963
+2026-09-29,W02,tree_entropy,max_depth=6,val,0.8349,0.8227
+2026-09-29,W02,tree_entropy,max_depth=8,val,0.7933,0.7756
+2026-09-29,W02,tree_entropy,max_depth=10,val,0.7838,0.7656
+2026-09-29,W02,tree_entropy,max_depth=12,val,0.7831,0.7650
+2026-09-29,W02,tree_entropy,max_depth=15,val,0.7831,0.7650
+2026-09-29,W02,tree_entropy,max_depth=None,val,0.7831,0.7650
+2026-09-29,W02,tree_gini,max_depth=4 (selected),test,0.8419,0.8359
+2026-09-29,W02,tree_gini,"full, unpruned",test,0.8110,0.8068
+2026-09-29,W02,tree_gini,reduced-error pruned,test,0.8395,0.8324
+2026-09-29,W02,sklearn_tree_ref,"gini, max_depth=4",test,0.8419,0.8359
+2026-09-29,W03,perceptron,WALKING-vs-LAYING,test,1.0000,1.0000
+2026-09-29,W03,delta_rule,WALKING-vs-LAYING,test,1.0000,1.0000
+2026-09-29,W03,logistic,WALKING-vs-LAYING,test,1.0000,1.0000
+2026-09-29,W03,perceptron,SITTING-vs-STANDING,test,0.9247,0.9245
+2026-09-29,W03,delta_rule,SITTING-vs-STANDING,test,0.9120,0.9115
+2026-09-29,W03,logistic,SITTING-vs-STANDING,test,0.9257,0.9255
+2026-09-29,W03,softmax_regression,lr=0.001,val,0.8813,0.8702
+2026-09-29,W03,softmax_regression,lr=0.01,val,0.9168,0.9099
+2026-09-29,W03,softmax_regression,lr=0.1,val,0.9284,0.9247
+2026-09-29,W03,softmax_regression,lr=1.0,val,0.9147,0.9095
+2026-09-29,W03,softmax_regression,best lr=0.1,test,0.9369,0.9365
+2026-09-29,W03,sklearn_logreg_ref,C=1.0,test,0.9555,0.9556
+2026-09-29,W04,mlp,SGD lr=0.01,val,0.9263,0.9212
+2026-09-29,W04,mlp,SGD+Momentum lr=0.01 mu=0.9,val,0.9400,0.9353
+2026-09-29,W04,mlp,Adam lr=0.001,val,0.9447,0.9428
+2026-09-29,W04,mlp,"Adam, sigmoid",val,0.9447,0.9437
+2026-09-29,W04,mlp,"Adam, tanh",val,0.9434,0.9414
+2026-09-29,W04,mlp,relu+adam+early_stop,test,0.9471,0.9465
+2026-09-29,W04,sklearn_mlp_ref,relu+adam,test,0.9437,0.9428
